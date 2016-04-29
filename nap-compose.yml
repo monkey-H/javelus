@@ -1,5 +1,5 @@
 javelus:
-  image: docker.iwanna.xyz:5000/hmonkey/javelus:v1
+  image: docker.iwanna.xyz:5000/hmonkey/javelus:v2
   command: /bin/bash -c "cd /root/apache-tomcat-6.0.41/bin && source setjavelus.sh && service mysqld start && sh catalina.sh"
   network: apple
   mem_limit: 256m
