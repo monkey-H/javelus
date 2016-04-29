@@ -4,6 +4,6 @@ javelus:
   network: apple
   mem_limit: 256m
   ports:
-    - 8801
-    - 8802
-    - 8803
+    - 8081
+    - 8082
+    - 8083
