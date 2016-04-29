@@ -5,3 +5,5 @@ javelus:
   mem_limit: 256m
   ports:
     - 8801
+    - 8802
+    - 8803
