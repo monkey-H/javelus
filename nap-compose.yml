@@ -1,12 +1,5 @@
 javelus:
-  image: docker.iwanna.xyz:5000/hmonkey/javelus:v2
-  command: /bin/bash -c "cd /root/apache-tomcat-6.0.41/bin && source setjavelus.sh && service mysqld start && sh catalina.sh run"
-  network: apple
-  mem_limit: 256m
-  environment:
-    - JAVELUS_JAVA_HOME=/root/jdk1.6.0_45/
-    - JAVELUS=/root/javelus/hotspot/build/linux/linux_i486_compiler2/fastdebug/hotspot
-  ports:
-    - 8081
-    - 8082
-    - 8083
+  image: docker.iwanna.xyz:5000/javelus
+  command: /bin/bash -c "cd /root/6.0.41/bin && source setjavelus.sh && service mysql start && sh catalina.sh run"
+  network: nap
+  port: 8080
