@@ -4,5 +4,6 @@ javelus:
   network: nap
   port: 8080
   environment:
+    - JAVA_HOME=/home/javelus/javelus/jdk1.6.0_45/
     - JAVELUS_JAVA_HOME=/home/javelus/javelus/jdk1.6.0_45/
     - JAVELUS=/home/javelus/javelus/hotspot/build/linux/linux_i486_compiler2/fastdebug/hotspot
